@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب</title>
+  <link rel="icon" href="صور/حفاظ البيان خلفيه ابيض.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/maktaba.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/forms.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- تضمين مكتبة jQuery -->
+
+</head>
+
+<body>
+  <section class="header_bages">
+    <nav>
+      <div class="nav-button">
+        <a href="login.html"><button class="btn" id="loginBtn">تسجيل الدخول</button></a>
+      </div>
+     
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-window-close" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="#WhoWe">من نحن</a></li>
+          <li><a href="Internal-courses.html">الدورات</a></li>
+          <li><a href="/Episodes.html">الحلقات</a></li>
+          <li><a href="">البرامج التخصصيه</a></li>
+          <li><a href="#maktaba">المكتبه</a></li>
+          <li><a href="affairs.html">شؤون الطلبه</a></li>
+          <!-- <li><a href="">المتجر</a></li> -->
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="لوجو حفاظ " />
+        </a>
+      </div>
+
+
+      <div class="nav-menu-btn">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="form-container">
+      <h2>تسجيل الدخول</h2>
+      <input type="email" id="login-email" placeholder="البريد الإلكتروني" required>
+      <input type="password" id="login-password" placeholder="كلمة السر" required>
+      <button onclick="login()">تسجيل الدخول</button>
+      <p>ليس لديك حساب؟ <a href="sign-up.html">إنشاء حساب</a></p>
+    </div>
+
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

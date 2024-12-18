@@ -1,0 +1,102 @@
+/* /////////////////////////////////////// */
+
+#qurankarem {
+  text-align: center;
+  margin-top: 0.5px;
+  font-size: 3rem;
+  padding-bottom: 40px;
+  color: rgb(6, 46, 29);
+}
+
+.quran-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 33px;
+}
+
+.card {
+  background-color: #577b76d3;
+  /* background-image: ; */
+  width: 30%;
+  height: 400px;
+  padding: 18px;
+  margin: 9px;
+  margin-top: 10px;
+  border-radius: 150px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 1px 1px 20px 5px rgba(23, 152, 133, 0.897);
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+}
+
+.card a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+
+.card :hover {
+  color: rgb(16, 255, 219);
+}
+
+/* /////////////////////////////////// */
+
+footer {
+  background-color: rgba(57, 101, 77, 0.356);
+  color: aliceblue;
+  height: 15vh;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-section .socials {
+  margin-bottom: 1rem;
+}
+
+.features-section .socials .img {
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+/* ظظظظظظظظظظظظظظ */
+
+.quran-boxes .card {
+  position: relative;
+  width: 15rem; /* نفس العرض والارتفاع المحدد للبطاقات */
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* إخفاء أي جزء يتجاوز الدائرة */
+}
+
+.quran-boxes .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* الحفاظ على تناسق الصورة */
+  border-radius: 50%; /* تحويل الصورة إلى دائرة */
+}
+
+.card-body a {
+  text-align: center;
+}

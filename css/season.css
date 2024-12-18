@@ -1,0 +1,55 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  direction: rtl;
+  background-color: #b4b8b8; /* خلفية خفيفة */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* مسافة بين الحلقات */
+}
+
+.episode {
+  background-color: #ffffff;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.episode:hover {
+  transform: translateY(-5px); /* تأثير حركة عند التحويم */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* تأثير ظل إضافي */
+}
+
+.episode img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.episode p {
+  padding: 15px;
+  margin: 0;
+  color: #34495e;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

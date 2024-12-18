@@ -1,0 +1,72 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  direction: rtl;
+  background: linear-gradient(to top, #727776, #7e837e, #abb3af);
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #f4f4f4;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.season {
+  margin: 30px auto;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة قليلاً */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ظل جميل */
+  transition: transform 0.3s;
+}
+
+.season:hover {
+  transform: scale(1.02); /* تكبير طفيف عند التحويم */
+}
+
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.episode {
+  width: 160px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.episode:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* تأثير عند التحويم */
+}
+
+.episode img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.episode p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover p {
+  color: #007bff; /* لون عند التحويم على النص */
+}
