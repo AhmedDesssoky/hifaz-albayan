@@ -149,6 +149,7 @@
     crossorigin="anonymous"></script>
   <script>
     var navLinks = document.getElementById("navLinks");
+    const storedUser = JSON.parse(localStorage.getItem("user"));
 
     function showMenu() {
       navLinks.style.right = "0";
@@ -156,15 +157,13 @@
     function hideMenu() {
       navLinks.style.right = "-200px";
     }
-    if (localStorage.getItem("isLoggedIn") === "true") {
+    if (localStorage.getItem("isLoggedIn") === "true" || storedUser ) {
       document.getElementById("loginBtn").textContent = "تسجيل خروج";
     }
     else
     {
       document.getElementById("loginBtn").textContent = "تسجيل دخول";
     }
-    const currentPage = window.location.pathname;
-    console.log(currentPage);
     
   </script>
   <script src="js/main.js"></script>
