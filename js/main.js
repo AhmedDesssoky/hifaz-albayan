@@ -1,7 +1,7 @@
 const currentPage = window.location.pathname;
 
 // تحديد الصفحات التي تحتاج إلى تسجيل دخول
-const protectedPages = ["/paid", "/affairs", "/Episodes"]; // قم بتعديل هذا حسب حاجتك
+const protectedPages = ["/paid.html", "/affairs.html", "/Episodes.html"]; // قم بتعديل هذا حسب حاجتك
 
 // إذا كانت الصفحة من الصفحات المحمية وكان المستخدم لم يسجل دخوله
 if (
